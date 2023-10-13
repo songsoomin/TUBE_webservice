@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>난 할 수 있다</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- script-->
+    <script src="https://kit.fontawesome.com/f5724b85da.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="p-3 text-bg-light">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+               style="margin: 0 20px 0 0;">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Tube_rogo1">
+                    <img src="/Img/Tube_rogo1.png" alt="rogo" style="width: 100px;">
+                </svg>
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 text-secondary">홈</a></li>
+                <li><a href="#" class="nav-link px-2 text-dark">커뮤니티</a></li>
+                <li><a href="#" class="nav-link px-2 text-dark">멘토링</a></li>
+                <li><a href="#" class="nav-link px-2 text-dark">메이트</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control form-control-light text-bg-light" placeholder="Search..."
+                       aria-label="Search">
+            </form>
+            <div class="text-end">
+                <button type="button" class="btn btn-outline" onClick="location.href='sign_in.html'">로그인</button>
+                <button type="button" class="btn btn-warning" onClick="location.href='sign_up.html'">회원가입</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- baneer -->
+<div class="main-container">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Img/1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/Img/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/Img/1.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- 멘토 대기 슬라이더-->
+<div class="container">
+    <section class="page-section portfolio" id="portfolio_met">
+        <div class="coures_header">
+            <a class="coures_header a tag2" href="#">
+                <h2 class="title is-4 is-spaced">
+                    성장을 위한 선생님
+                    <span class="icon">
+                       <i class="fa-solid fa-angle-right"></i>
+                   </span>
+                </h2>
+            </a>
+            <p class="subtext is-2"> 다양한 선생님이 기다리고 있어요 <br> 프로필을 눌러 만나보세요!</p>
+        </div>
+    </section>
+    <hr>
+    <!-- 멘토 슬라이더-->
+    <div class="main-card-slider">
+        <section class="sec-card">
+            <div class="swiper mySwiper container">
+                <!--시작-->
+                <div class="swiper-wrapper content">
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__340.png"
+                                     alt="">
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">닉네임1</span>
+                                <span class="profession">안녕하세요. 다람쥐 쳇바퀴 굴러간다</span>
+                            </div>
+                            <!--명성도 추가 란-->
+                            <!--명성도 추가 란-->
+                            <div class="button">
+                                <button class="aboutMe">프로필 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__340.png"
+                                     alt="">
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">닉네임2</span>
+                                <span class="profession">안녕하세요. 다람쥐 쳇바퀴 굴러간다. 테스트</span>
+                            </div>
+                            <!--명성도 추가 란-->
+                            <!--명성도 추가 란-->
+                            <div class="button">
+                                <button class="aboutMe">프로필 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__340.png"
+                                     alt="">
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">닉네임3</span>
+                                <span class="profession">안녕하세요. 다람쥐 쳇바퀴 굴러간다. 테스트</span>
+                            </div>
+                            <!--명성도 추가 란-->
+                            <!--명성도 추가 란-->
+                            <div class="button">
+                                <button class="aboutMe">프로필 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__340.png"
+                                     alt="">
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">닉네임4</span>
+                                <span class="profession">안녕하세요. 다람쥐 쳇바퀴 굴러간다. 테스트</span>
+                            </div>
+                            <!--명성도 추가 란-->
+                            <!--명성도 추가 란-->
+                            <div class="button">
+                                <button class="aboutMe">프로필 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__340.png"
+                                     alt="">
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">닉네임5</span>
+                                <span class="profession">안녕하세요. 다람쥐 쳇바퀴 굴러간다. 테스트</span>
+                            </div>
+                            <!--명성도 추가 란-->
+                            <!--명성도 추가 란-->
+                            <div class="button">
+                                <button class="aboutMe">프로필 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__340.png"
+                                     alt="">
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">닉네임6</span>
+                                <span class="profession">안녕하세요. 다람쥐 쳇바퀴 굴러간다. 테스트</span>
+                            </div>
+                            <!--명성도 추가 란-->
+                            <!--명성도 추가 란-->
+                            <div class="button">
+                                <button class="aboutMe">프로필 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__340.png"
+                                     alt="">
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">닉네임7</span>
+                                <span class="profession">안녕하세요. 다람쥐 쳇바퀴 굴러간다. 테스트</span>
+                            </div>
+                            <!--명성도 추가 란-->
+                            <!--명성도 추가 란-->
+                            <div class="button">
+                                <button class="aboutMe">프로필 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__340.png"
+                                     alt="">
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">닉네임8</span>
+                                <span class="profession">안녕하세요. 다람쥐 쳇바퀴 굴러간다. 테스트</span>
+                            </div>
+                            <!--명성도 추가 란-->
+                            <!--명성도 추가 란-->
+                            <div class="button">
+                                <button class="aboutMe">프로필 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__340.png"
+                                     alt="">
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">닉네임9</span>
+                                <span class="profession">안녕하세요. 다람쥐 쳇바퀴 굴러간다. 테스트</span>
+                            </div>
+                            <!--명성도 추가 란-->
+                            <!--명성도 추가 란-->
+                            <div class="button">
+                                <button class="aboutMe">프로필 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__340.png"
+                                     alt="">
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">닉네임10</span>
+                                <span class="profession">안녕하세요. 다람쥐 쳇바퀴 굴러간다. 테스트</span>
+                            </div>
+                            <!--명성도 추가 란-->
+                            <!--명성도 추가 란-->
+                            <div class="button">
+                                <button class="aboutMe">프로필 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__340.png"
+                                     alt="">
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">닉네임11</span>
+                                <span class="profession">안녕하세요. 다람쥐 쳇바퀴 굴러간다. 테스트</span>
+                            </div>
+                            <!--명성도 추가 란-->
+                            <!--명성도 추가 란-->
+                            <div class="button">
+                                <button class="aboutMe">프로필 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__340.png"
+                                     alt="">
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">닉네임12</span>
+                                <span class="profession">안녕하세요. 다람쥐 쳇바퀴 굴러간다. 테스트</span>
+                            </div>
+                            <!--명성도 추가 란-->
+                            <!--명성도 추가 란-->
+                            <div class="button">
+                                <button class="aboutMe">프로필 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--종료-->
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+    </div>
+</div>
+<!--도움 요청 슬라이더-->
+<div class="container">
+    <section class="page-section portfolio" id="portfolio_help">
+        <div class="coures_header">
+            <a class="coures_header a tag2" href="#">
+                <h2 class="title is-4 is-spaced">
+                    도움이 필요해요!
+                    <span class="icon">
+                       <i class="fa-solid fa-angle-right"></i>
+                   </span>
+                </h2>
+            </a>
+            <p class="subtext is-2">혼자서는 못해요, 멘토의 도움이 필요해요! <br> 요청을 확인해 퀘스트를 수락해보세요</p>
+        </div>
+        <hr>
+    </section>
+    <section class="container">
+        <div class="project-finder-list">
+            <div class="item item_1">
+                <a href="#" class="card-link">
+                    <div class="project-finder-card">
+                        <div class="text-button-1 project-finder-link">Card title</div>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.Some quick example text to build on the card title and make up the bulk of
+                            the card's content.Some quick example text to build on the card title and make up the bulk of
+                            the card's content.Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item item_2">
+                <a href="#" class="card-link">
+                    <div class="project-finder-card">
+                        <div class="text-button-1 project-finder-link">Card title</div>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">This is a test to see if the length of the box doesn't change. It would be
+                            sad if it did.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item item_3">
+                <a href="#" class="card-link">
+                    <div class="project-finder-card">
+                        <div class="text-button-1 project-finder-link">Card title</div>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">This is a test to see if the box does not change even if I enter short
+                            text.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item item_4">
+                <a href="#" class="card-link">
+                    <div class="project-finder-card">
+                        <div class="text-button-1 project-finder-link">Card title</div>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">abc.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- 커뮤니티 소통방 -->
+<div class="container">
+    <section class="page-section portfolio" id="portfolio_community">
+        <div class="coures_header">
+            <a class="coures_header a tag2" href="#">
+                <h2 class="title is-4 is-spaced">
+                    게임 친구를 찾아보세요!
+                    <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                </h2>
+            </a>
+            <p class="subtext is-2"> 무슨 이야기가 오가고 있을까요? <br> 다양한 장르 속 내 파티원을 찾아요</p>
+        </div>
+        <hr>
+    </section>
+    <section class="container">
+        <div class="container text-center">
+            <div class="community-project-finder-list">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small>3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                            varius blandit.</p>
+                        <small>Donec id elit non mi porta.</small>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small>3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                            varius blandit.</p>
+                        <small>Donec id elit non mi porta.</small>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small>3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                            varius blandit.</p>
+                        <small>Donec id elit non mi porta.</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <div class="community-project-finder-list">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small>3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                            varius blandit.</p>
+                        <small>Donec id elit non mi porta.</small>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small>3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                            varius blandit.</p>
+                        <small>Donec id elit non mi porta.</small>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small>3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                            varius blandit.</p>
+                        <small>Donec id elit non mi porta.</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!--footers-->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/static" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 | Tube: 사람과 사람을 잇다</span>
+        <span class="mb-3 mb-md-0 text-body-secondary">&nbsp;| 2019E7087 송수민</span>
+    </div>
+</footer>
+<!--JS Script-->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="/js_script/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
